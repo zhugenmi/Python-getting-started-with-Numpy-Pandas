@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-with open("data/covid19_day_wise.csv","r",encoding="utf-8") as f:
+with open("../data/covid19_day_wise.csv","r",encoding="utf-8") as f:
     data=f.readlines()
 
 covid={

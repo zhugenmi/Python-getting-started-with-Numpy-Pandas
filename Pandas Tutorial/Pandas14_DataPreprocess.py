@@ -1,6 +1,6 @@
 import pandas as pd
 
-path="data/iris.csv"
+path="../data/iris.csv"
 columns= ["sepal length", "sepal width", "petal length", "petal width", "class"]
 df = pd.read_csv(path, names=columns)
 print(df)

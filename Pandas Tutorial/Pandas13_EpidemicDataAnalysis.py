@@ -1,6 +1,6 @@
 import pandas as pd
 
-df=pd.read_csv("data/covid19_day_wise.csv")
+df=pd.read_csv("../data/covid19_day_wise.csv")
 print(df.head())
 
 # 获取 2020 年 2 月 3 日的所有数据

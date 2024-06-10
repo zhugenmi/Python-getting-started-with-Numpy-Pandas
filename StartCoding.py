@@ -18,7 +18,7 @@ bool("")  # false
 
 numbers = ["one", "two", "three"]
 
-numbers[-1]  # = three. If we pass negative value Python whill start from th end
+numbers[-1]  # = three. If we pass negative value Python whill start from the end
 numbers[-2]  # two
 len(numbers)  # 3
 numbers.append("four")  # add value to the last
@@ -54,8 +54,7 @@ alpha[:3]  # ['a', 'b', 'c']
 
 alpha[3:]  # ['d', 'e'] In this case, last index is not present. So it travels till the end of the list.
 
-alpha[
-:]  # ['a', 'b', 'c', 'd', 'e'] There is no starting or ending index. So you know what happens. And this helps you in copying the entire array. I think I don't have to explain that if you copy the array, then any changes in the original array won't affect the copied array.
+alpha[:]  # ['a', 'b', 'c', 'd', 'e'] There is no starting or ending index. So you know what happens. And this helps you in copying the entire array. I think I don't have to explain that if you copy the array, then any changes in the original array won't affect the copied array.
 
 another_alpha = alpha  # This is not copying the array. Any changes in alpha will affect another_alpha too.
 
@@ -78,8 +77,7 @@ alpha.update(['a', 'x', 'z'])  # add mutiple values
 
 print(alpha)  # {'s', 'z', 'x', 'a', 'c', 'd', 'b'}
 alpha.remove('a')
-alpha.discard(
-    'a')  # It's safer to use discard than remove. Discard will never throw an error even if the element is not present in the set but remove will do.
+alpha.discard('a')  # It's safer to use discard than remove. Discard will never throw an error even if the element is not present in the set but remove will do.
 
 # 字典 K-V
 user = {'id': 1, 'name': 'John wick', 'email': 'sdfgag@666.com'}
@@ -210,7 +208,6 @@ class Dog(Animal):
         self.name=name
 
     def eat(self):
-
         print('Dog eats')
 
 dog1 = Dog('harry')
